@@ -1,0 +1,18 @@
+{
+  "name": "どこでも脳トレ",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "脳トレしてね！",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+    "16": "images/icon_brain_16.png",
+    "128": "images/icon_brain_128.png"
+  },
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "images/icon_brain_16.png",
+    "default_title": "脳トレ",
+    "default_popup": "html/popup.html"
+  },
+  "permissions": []
+}
