@@ -12,9 +12,24 @@ let sec = 0;
 let min = 0;
 let timer;
 
-$(function(){ 
+$(function(){
 	start_timer();
 	init();
+
+	var from = $('.form-control');
+	from.focus();
+	from.keypress(function(e) {
+		if (e.which == 13) {
+			var text = $.trim(from.val());
+			if (!text) {
+				return false;
+			}
+			check_ans(Number(text));
+			setTimeout(function(){
+				from.val('');
+			}, 800);
+		}
+	});
 });
 
 function start_timer() {
@@ -48,7 +63,6 @@ function countup()
 }
 
 function init() {
-	   
 	level = get_level();
 	set_param();
 
@@ -74,7 +88,7 @@ function init() {
 		{
 			var index = Math.floor(Math.random() * (signs.length));
 			hash_sign['sign' + j] = signs[index];
-		}	
+		}
 
 		var expr = "";
 		for (var j = 1; j <= param['args']; j++)

@@ -166,3 +166,14 @@ td a.btn {
 	min-width: 180px;
 	margin-bottom: 0em;
 }
+
+input[type=text].form-control {
+	width: 85%;
+	margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+div#form {
+	margin-top: -1.5em;
+    margin-bottom: 1em;
+}
