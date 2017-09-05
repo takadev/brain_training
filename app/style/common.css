@@ -61,6 +61,20 @@ div#question p.incorrect {
 	display:none
 }
 
+div#question p.incorrect-ins {
+	position: absolute;
+	color: blue;
+	font-weight: bold;
+	font-size: 13em;
+	font-family :Quicksand, sans-serif;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin:0;
+	padding:0;
+	display:none
+}
+
 div#result {
     font-size: 250%;
     margin: 0;
@@ -170,10 +184,14 @@ td a.btn {
 input[type=text].form-control {
 	width: 85%;
 	margin-top: 0.5em;
-    margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 div#form {
 	margin-top: -1.5em;
-    margin-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+div#number {
+	font-size: 250%;
 }
